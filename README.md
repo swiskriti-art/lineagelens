@@ -2,9 +2,6 @@
 
 Column-level SQL lineage and impact analysis: given a column you want to change, it lists the downstream columns and dashboards that read it.
 
-[![CI and deployment](https://github.com/SlateGitOrg/lineagelens/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SlateGitOrg/lineagelens/actions/workflows/ci.yml)
-[Live demo](https://slategitorg.github.io/lineagelens/)
-
 ![Lineage Lens desktop view](docs/assets/deployed-desktop.png)
 
 ## Why
@@ -42,7 +39,7 @@ flowchart LR
 Requires Python 3.11+. There is nothing to install.
 
 ```bash
-git clone https://github.com/SlateGitOrg/lineagelens.git
+git clone https://github.com/swiskriti-art/lineagelens.git
 cd lineagelens
 python3 -m unittest discover -s tests -v   # 18 tests
 python3 -m src.demo                        # column-level vs table-level impact
@@ -128,10 +125,3 @@ docs/           architecture notes and screenshots
 ## License
 
 MIT - see [LICENSE](LICENSE).
-
-## Maintainer
-
-Dev Bhatt maintains lineagelens, bringing over six years of experience building data pipelines, controls and dashboards, with a focus on SQL, Python and analytics automation.
-
-- LinkedIn: [linkedin.com/in/dev-bhatt27](https://linkedin.com/in/dev-bhatt27)
-- Email: [devbhattwork27@gmail.com](mailto:devbhattwork27@gmail.com)
